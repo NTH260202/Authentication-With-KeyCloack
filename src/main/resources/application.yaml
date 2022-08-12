@@ -1,0 +1,39 @@
+#spring.security.oauth2.client.registration.spring-sec-with-keycloak.client-id=spring-sec-with-keycloak
+#spring.security.oauth2.client.registration.spring-sec-with-keycloak.client-secret=PTiXu5kzGi9HfMiBBdzh8SiED0Ge3eOf
+#spring.security.oauth2.client.registration.spring-sec-with-keycloak.scope=openid, profile, roles
+#spring.security.oauth2.client.registration.spring-sec-with-keycloak.authorization-grant-type=authorization_code
+#spring.security.oauth2.client.registration.spring-sec-with-keycloak.redirect-uri=http://localhost:8080/login/oauth2/code/spring-sec-with-keycloak
+#
+#spring.security.oauth2.client.provider.spring-sec-with-keycloak.issuer-uri=http://localhost:8180/realms/thanhha
+
+#keycloak.auth-server-url=http://localhost:8080
+#keycloak.use-resource-role-mappings=true
+#keycloak.realm=thanhha
+#keycloak.resource=spring-sec-with-keycloak
+#keycloak.public-client=true
+#keycloak.credentials.secret=kVQA2A1c87wCsLqWFOZ8eoZ2Ohd9uYr0
+#client-secret=kVQA2A1c87wCsLqWFOZ8eoZ2Ohd9uYr0
+#keycloak-admin-username=thanhha
+#keycloak-admin-password=013845
+#keycloak-admin-clientid=admin-cli
+#keycloak-admin-realm=master
+#keycloak.bearer-only=true
+#server.port=8180
+
+keycloak:
+  realm: thanhha
+  auth-server-url: http://localhost:8080
+  use-resource-role-mappings: true
+  credentials:
+    secret: kVQA2A1c87wCsLqWFOZ8eoZ2Ohd9uYr0
+  resource: spring-sec-with-keycloak
+  public-client: true
+  bearer-only: true
+keycloak-admin:
+  username: thanhha
+  password: 013845
+  realm: master
+  client-id: admin-cli
+server:
+  port: 8180
+api-key: ${KEY:}
