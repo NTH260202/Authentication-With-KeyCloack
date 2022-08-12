@@ -1,6 +1,6 @@
 package com.example.authenwithkeycloack.service;
 
-import com.example.authenwithkeycloack.UserDTO;
+import com.example.authenwithkeycloack.dto.UserDTO;
 import com.example.authenwithkeycloack.config.keycloak.KeycloakProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.keycloak.admin.client.CreatedResponseUtil;
@@ -10,11 +10,8 @@ import org.keycloak.representations.idm.RoleRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import javax.ws.rs.NotFoundException;
 import javax.ws.rs.core.Response;
 import java.util.Arrays;
 import java.util.Collections;

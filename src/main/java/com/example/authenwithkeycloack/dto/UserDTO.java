@@ -1,4 +1,4 @@
-package com.example.authenwithkeycloack;
+package com.example.authenwithkeycloack.dto;
 
 import lombok.Data;
 

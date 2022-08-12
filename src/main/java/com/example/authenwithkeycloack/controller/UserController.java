@@ -1,6 +1,6 @@
 package com.example.authenwithkeycloack.controller;
 
-import com.example.authenwithkeycloack.UserDTO;
+import com.example.authenwithkeycloack.dto.UserDTO;
 import com.example.authenwithkeycloack.config.keycloak.KeycloakProvider;
 import com.example.authenwithkeycloack.service.AdminClientService;
 import lombok.extern.slf4j.Slf4j;
@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
